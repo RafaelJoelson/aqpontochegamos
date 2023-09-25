@@ -1,0 +1,2 @@
+Ignore os arquivos desktop.ini
+São arquivos de sincronia do google drive.

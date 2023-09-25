@@ -1,0 +1,439 @@
+/*Edição do geral do corpo das páginas*/
+html{
+	
+	width:  100%;
+	height: 100%;
+    
+
+}
+body{
+	
+    margin: auto;
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer" "index-container";
+    grid-template-rows: 1fr 80px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+	width: 98%;
+	height: 100%;
+    
+}
+main{
+	grid-area: main;
+}
+/*Edição geral das páginas index, userdashboard e tabelas*/
+/*Edição do cabeçalho*/        
+header{
+    
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 170px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+header nav {
+    
+    font-size: 24px;
+    background-color: rgb(212, 61, 61);
+    padding: 5px;
+    width: auto;
+    margin:auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+header input[type="submit"], input[type="button"] {
+
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+header input[type="submit"]:hover, input[type="button"]:hover {
+
+    background-color: #b8b50b;
+
+}
+.carregar{
+    
+    margin: 10px auto;
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+.carregar:hover {
+
+    background-color: #b8b50b;
+
+}
+.navFaixa a img {
+ 
+    width: 75px;
+    float: left;
+    
+
+}
+.buscador_container{
+
+    text-align: center;
+    font-size: 18px;
+    
+}
+.form_buscador {
+
+    box-sizing: border-box;
+    background-color: rgb(212, 61, 61);
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    margin: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+.form_buscador label input{
+    
+    float: right;
+
+}
+.form_buscador input[type="text"]{
+
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+    background-color: #f2f2f2;
+
+}         
+.login{
+
+    text-align: right;
+
+}
+.login ul{
+
+    font-size: 16px;
+    list-style-type: none;
+
+}     
+.login li{
+
+    display: inline-block;
+    padding-left: 15px;
+
+}
+.navmap {
+
+    list-style-type: none;
+
+}
+.navmap li{
+
+    display: inline-block;
+
+}
+/*Fim da edição do cabeçalho*/
+/*Fim da edição geral do corpo das páginas*/
+/*Edição dos elementos gerais dentro do corpo da página*/
+.painelcard a:hover{
+
+    background-color: rgb(186, 186, 204);
+
+}
+.cardstabela{
+
+    
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(212, 61, 61);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.exc-container {
+
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.exccard {
+    padding: 10px;
+    word-wrap: break-word;
+    width: 512px;
+    height: 480px;
+    margin: 20px;
+    background-color: rgb(203, 203, 221);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+.desc-container-p{
+   
+    margin: auto;
+    width: 80%;
+    height: 25%;
+    overflow: auto;
+
+}
+.miniCard {
+
+    margin: 30px 15px;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(203, 203, 221);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    cursor: pointer;
+
+}
+.mini-text-container{
+    
+    margin: auto;
+    width: 85%;
+
+}
+.mini-text-container p {
+
+    padding-top: 5px;
+    margin: 5% auto;
+
+}
+
+.miniCard img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+	object-fit:cover;
+
+
+}
+.miniCard a{
+    
+    color: rgb(66, 3, 98);
+    text-decoration: none;
+
+}
+.miniCard a:visited{
+
+    color: rgb(66, 3, 98);
+
+}
+.miniCard:hover{
+
+   -webkit-transform: scale(0.1);
+   transform: scale(1.1);
+
+}
+button{
+
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+h2{
+    font-size: 100%;
+} 
+.painelcard {
+
+    margin: 10px auto;
+    width: 40%;
+    padding: 20px;
+    background-color: rgb(203, 203, 221);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+.userImgContainer{
+	
+    margin-top: 24px;
+	display:inline-block;
+	width: 175px;
+	border: 3px solid rgb(66, 3, 98);
+    border-radius: 50%;
+	overflow: hidden;
+	
+}
+.userImgContainer img {
+
+    margin: -12px;
+	width: 200px;
+	height: 200px;
+	object-fit:cover;
+    
+}
+.textCard{
+    
+    margin: 20px auto ;
+    background-color: rgb(212, 61, 61);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 90%;  
+
+}
+
+.card-container {
+
+    display: flex;
+    
+}
+.card {
+
+    width: 40%;
+    margin: 10px;
+    background-color: rgb(203, 203, 221);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 10px;
+
+}
+.imgcapa {
+
+    width: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.index-container{
+    
+    width: 100%;
+    height: 80%;
+    grid-area: index-container;
+    margin: auto;
+}
+/*Início da edição de tabelas do usuário*/
+.table-card{
+
+    width: 100%;
+    height: 430px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: block;
+    overflow: scroll;
+
+}
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+    
+
+    
+}
+table [type="button"] {
+    
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+table [type="button"]:hover {
+
+    background-color: #b8b50b;
+
+}
+table img{
+    width: 75px;
+}
+
+table .btns{
+    text-align: center;
+}
+table .gerenciar {
+    
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+table .gerenciar:hover{
+
+    background-color:  #d17d00;
+}
+th, td {
+
+    font-size: 12px;
+    padding: 6px 12px;
+
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th {
+
+    background-color: rgb(212, 61, 61);
+    color: white;
+
+}
+/*Fim da edição das tabelas de usuário*/
+/*Inicio da edição de elementos gerais dentro do corpo da página*/
+a{
+    color: rgb(103, 103, 192);
+    text-decoration: none; 
+}
+a:visited{
+
+    color: rgb(103, 103, 192);
+
+}
+/*Fim das edições gerais dentro do corpo da página*/
+/*Rodapé*/
+footer {
+    
+	position: relative;
+    background-color: rgb(212, 61, 61);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	grid-area: footer;
+
+}
+footer h3{ 
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 0.2;
+	
+}
+footer h4{
+    font-size: 15px;
+    text-align: center;
+    line-height: 0;
+}

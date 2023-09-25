@@ -1,0 +1,191 @@
+/*Edição do geral do corpo das páginas*/
+html{
+	
+	width:  100%;
+	height: 100%;   
+
+}
+body{
+	
+    margin: auto;
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    grid-template-rows: 1fr 80px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+	width: 98%;
+	height: 100%;
+    
+}
+main{
+	grid-area: main;
+}
+/*Inicio da edição de elementos gerais dentro do corpo da página*/
+a{
+    color: rgb(103, 103, 192);
+    text-decoration: none; 
+}
+a:visited{
+
+    color: rgb(103, 103, 192);
+
+}
+a:hover{
+
+    background-color: #f3f3f3;
+
+}
+/*Fim das edições gerais dentro do corpo da página*/
+/*Edições das páginas login, searchenvaluation e changer-passord*/
+/*Edições de cabecalho*/
+header{
+    
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+header nav {
+    
+    font-size: 24px;
+    background-color: rgb(212, 61, 61);
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+.navFaixa a img {
+
+    width: 100px;
+    float: left;
+    padding-left: 10px;
+
+}
+.navmap ul{
+
+    list-style-type: none;
+
+}
+.navmap li{
+
+    display: inline-block;
+
+}
+/*Fim das edições de cabeçalho*/
+/*Edições do corpo da página*/
+.login-card{
+
+    width: 100%;
+    height: 430px;
+
+}
+.formlogin {/*Formulário de login*/
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+.check-bx{
+
+    padding: 10px;
+
+}
+.formQuestion {/*Formulário de redefinição de senha*/
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+h2 {
+
+    text-align: center;
+    margin-top: 0;
+
+}
+input[type="text"], input[type="password"], input[type="email"]{
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+    background-color: #f2f2f2;
+
+}
+form select{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+form label {
+
+    padding-top: 10px;
+    font-size: 18px;
+    display: block;
+
+}
+input[type="submit"], input[type="button"] {
+
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+
+    background-color: #b8b50b;
+
+}
+.forgot-password {
+
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/*Rodapé*/
+footer {
+    
+	position: relative;
+    background-color: rgb(212, 61, 61);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	grid-area: footer;
+
+}
+footer h3{ 
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 0.2;
+	
+}
+footer h4{
+    font-size: 15px;
+    text-align: center;
+    line-height: 0;
+}

@@ -1,0 +1,308 @@
+/*Edição do geral do corpo das páginas*/
+html{
+	
+	width:  100%;
+	height: 100%;
+    
+
+}
+body{
+	
+    margin: auto;
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer" "index-container";
+    grid-template-rows: 1fr 80px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+	width: 98%;
+	height: 100%;
+    
+}
+main{
+	grid-area: main;
+}
+/*Edição geral das páginas index, userdashboard e tabelas*/
+/*Edição do cabeçalho*/        
+header{
+    
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+header nav {
+    
+    font-size: 24px;
+    background-color: rgb(181, 133, 189);
+    padding: 5px;
+    width: auto;
+    margin:auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+header input[type="submit"], input[type="button"] {
+
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+header input[type="submit"]:hover, input[type="button"]:hover {
+
+    background-color: #b8b50b;
+
+}
+.navFaixa a img {
+ 
+    width: 75px;
+    float: left;
+    
+
+}        
+.login{
+
+    text-align: right;
+
+}
+.login ul{
+
+    font-size: 16px;
+    list-style-type: none;
+
+}     
+.login li{
+
+    display: inline-block;
+    padding-left: 15px;
+
+}
+.navmap {
+
+    list-style-type: none;
+
+}
+.navmap li{
+
+    display: inline-block;
+
+}
+/*Fim da edição do cabeçalho*/
+/*Fim da edição geral do corpo das páginas*/
+/*Edição dos elementos gerais dentro do corpo da página*/
+.carregaTutoriais{
+   
+    padding: 10px;
+    margin: 20px 20px;
+    height: 640px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: rgb(203, 203, 221);
+
+}
+.carregaTutoriais img{
+   
+    width: 70%;
+
+}
+.carregaTermos {
+
+    padding: 10px;
+    margin: 20px 20px;
+    height: 640px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: rgb(203, 203, 221);
+
+}
+.textCard{
+    
+    padding: 5px;
+    margin: 20px auto ;
+    background-color: rgb(181, 133, 189);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 90%;  
+
+}
+.carregaTermos button {
+    
+    margin: 12px auto;
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.carregaTermos button :hover {
+
+    background-color: #b8b50b;
+
+}
+.aceitoTermos{
+
+    text-align: center;
+    padding: 10px;
+    
+
+}
+label{
+    
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 18px;
+
+}
+input[type=checkbox] {
+    
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.index-container{
+    
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    grid-area: index-container;
+    margin: auto;
+}
+
+/*Inicio da edição de elementos gerais dentro do corpo da página*/
+a{
+    color: rgb(103, 103, 192);
+    text-decoration: none; 
+}
+a:visited{
+
+    color: rgb(103, 103, 192);
+
+}
+.voltar {
+    
+    margin: 12px auto;
+    background-color: #dedb0d;
+    color: rgb(103, 103, 192);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.voltar :hover {
+
+    background-color: #b8b50b;
+
+}
+/*Fim das edições gerais dentro do corpo da página*/
+/*Rodapé*/
+footer {
+    
+	position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(181, 133, 189);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    grid-area: footer;
+	text-align: center;
+
+}
+.eutemovoSA h3{ 
+
+    font-size: 16px;
+    text-align: center;
+
+}
+.eutemovoSA h4{
+
+    font-size: 12px;
+    text-align: center;
+
+}
+footer h3{ 
+
+    color: rgb(66, 3, 98);
+	
+}
+footer h4{
+
+    color: rgb(66, 3, 98);
+    
+}
+.div-p-footer{
+
+    padding: 10px;
+    background-color: rgb(203, 203, 221);
+    text-align: left;
+
+}
+.div-p-footer ul{
+
+    font-size: 16px;
+    list-style-type: none;
+
+}
+.div-p-footer p{
+
+    padding-left: 10px;
+
+}  
+.div-p-footer li{
+
+    
+    padding-left: 15px;
+    padding-top: 5px;
+    display: inline-block;
+
+}
+footer h1{
+
+    font-size: 24px;
+    color: rgb(171, 92, 228);
+    text-align: center;
+    line-height: 0;
+    
+
+}
+
+.div-p-footer{
+
+    padding: 10px;
+    background-color: rgb(203, 203, 221);
+    text-align: left;
+
+}
+.div-p-footer ul{
+
+    font-size: 16px;
+    list-style-type: none;
+
+}
+.div-p-footer p{
+
+    padding-left: 10px;
+
+}  
+.div-p-footer li{
+
+    
+    padding-left: 15px;
+    padding-top: 5px;
+    display: inline-block;
+
+}

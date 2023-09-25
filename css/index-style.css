@@ -1,0 +1,482 @@
+/*Edição do geral do corpo das páginas*/
+html{
+	
+	width:  100%;
+	height: 100%;
+    overflow: scroll;
+
+}
+body{
+	
+    margin: auto;
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer" "header";
+    grid-template-rows: 1fr 80px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+	width: 98%;
+	height: 100%;
+    
+    
+}
+main{
+	grid-area: main;
+    height: 100%;
+}
+.cardstabela {
+    display: none;
+}
+/*Edição geral das páginas index, userdashboard e tabelas*/
+/*Edição do cabeçalho*/        
+header{
+    
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+    grid-area: header;  
+
+}
+header input[type="submit"], input[type="button"] {
+    
+    margin: 30px auto;
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 16px 22px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+header input[type="submit"]:hover, input[type="button"]:hover {
+
+    background-color: rgb(220, 195, 224);
+
+}
+.login{
+
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+    position: relative;
+
+}
+.login .usuario{
+
+    color: rgb(183, 61, 204);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background-color: rgb(220, 195, 224);
+    padding: 3px;
+    margin-left: 10px;
+
+}   
+.login ul{
+
+    font-size: 16px;
+    list-style-type: none;
+    
+
+}     
+.login li{
+
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 24px;
+    
+
+}
+.loginButton{
+
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 16px 22px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    
+
+}
+.loginButton:hover{
+    background-color: rgb(220, 195, 224);
+}
+.index-container{
+
+    margin-left: 75px;
+    z-index: 5;
+    width: 70%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    position: absolute;;
+    overflow-x: hidden;
+    
+
+}
+.idx_container{
+
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: rgb(181, 133, 189);
+    border-radius: 5px;
+    box-shadow: 1 1 25px rgba(0,0,0,0.2);
+    position: relative;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(66, 3, 98);
+
+}
+.idx_container .img1{
+
+    width: 55%;
+
+}
+.idx_container .img2{
+    width: 67%
+}
+
+.form_buscador_header{
+
+    margin: 30px auto;
+    text-align: center;
+    width: 70%;
+    height: 80%;
+    display: block;
+
+}
+.form_buscador_header label{
+
+    text-align: center;
+
+
+}
+.form_buscador_header input{
+    
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+    background-color: #f2f2f2;
+
+}
+.cadastre{
+
+    margin-top: 50px;
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 17px 22px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.cadastre:hover{
+    background-color: rgb(220, 195, 224);
+}
+.buscadorButton{
+
+    margin-top: 28px;
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 17px 22px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.buscadorButton:hover{
+    background-color: rgb(220, 195, 224);
+}
+.cardstabela{
+
+    
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(181, 133, 189);
+    overflow: hidden;
+ 
+}
+.miniCard {
+
+    margin: 30px 15px;
+    width: 384px;
+    height: 524px;
+    background-color: rgb(203, 203, 221);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 1; 
+
+}
+.miniCard p{
+
+    margin: 5px;
+    word-wrap: break-word;
+
+}
+.mini-img-container {
+
+    width: 99%;
+    height: 40%;
+    border-radius: 5px;
+	object-fit:cover;
+
+}
+
+.mini-text-container{
+    
+    width: 99%;
+
+}
+.mini-text-container p {
+
+    font-weight: bold;
+    padding-top: 5px;
+    margin: 5% auto;
+    word-spacing: wrap;
+
+}
+
+.miniCard img {
+
+    margin: 2px 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+	object-fit:cover;
+
+
+}
+.miniCard a{
+    
+    color: rgb(66, 3, 98);
+    text-decoration: none;
+
+}
+.miniCard a:visited{
+
+    color: rgb(66, 3, 98);
+
+}
+.miniCard:hover{
+
+   -webkit-transform: scale(0.1);
+   transform: scale(1.1);
+
+}
+/*Fim da edição do cabeçalho*/
+/*Fim da edição geral do corpo das páginas*/
+/*Edição dos elementos gerais dentro do corpo da página*/
+h2{
+    font-size: 100%;
+} 
+/*Inicio da edição de elementos gerais dentro do corpo da página*/
+a{
+    color: rgb(103, 103, 192);
+    text-decoration: none; 
+}
+a:visited{
+
+    color: rgb(103, 103, 192);
+
+}
+/*Fim das edições gerais dentro do corpo da página*/
+/*Rodapé*/
+footer {
+    
+	position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(181, 133, 189);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    grid-area: footer;
+	
+
+}
+.eutemovoSA h3{ 
+
+    font-size: 16px;
+    text-align: center;
+
+}
+.eutemovoSA h4{
+
+    font-size: 12px;
+    text-align: center;
+
+}
+.excursoes{
+
+    height: 200px;
+    text-align: center;
+    margin-top: 35px;
+    background-color: rgb(203, 203, 221);
+}
+.excursoes .titulo{
+    padding-top: 10px;
+   
+}
+.buscador_container{
+
+    text-align: center;
+    font-size: 18px;
+    
+}
+.form_buscador {
+
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(181, 133, 189);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    color: rgb(66, 3, 98);
+    font-size: 18px;
+
+}
+.form_buscador label input{
+    
+    float: right;
+
+}
+.form_buscador input[type="text"]{
+
+    width: 22%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+    background-color: #f2f2f2;
+
+}
+.form_buscador input[type="submit"], input[type="button"] {
+    
+    margin: 10px auto;
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.form_buscador input[type="submit"]:hover, input[type="button"]:hover {
+
+    background-color: rgb(220, 195, 224);
+
+}
+.botaoVoltar{
+    padding: 10px;
+    background-color: rgb(181, 133, 189);
+    margin: auto;
+    text-align: center;
+}
+.voltar{
+    
+    border: solid 1px rebeccapurple;
+    margin: auto;
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.carregar{
+    
+    border: solid 1px rebeccapurple;
+    margin: auto;
+    background-color: rgb(254, 254, 254);
+    color: rgb(171, 92, 228);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.carregar:hover {
+
+    background-color: rgb(220, 195, 224);
+
+}
+footer h1{
+
+    font-size: 24px;
+    color: rgb(171, 92, 228);
+    text-align: center;
+    line-height: 0;
+    
+
+}
+footer h3{ 
+
+    color: rgb(66, 3, 98);
+	
+}
+footer h4{
+
+    color: rgb(66, 3, 98);
+    
+}
+.div-p-footer{
+
+    padding: 10px;
+    background-color: rgb(203, 203, 221);
+    text-align: left;
+
+}
+.div-p-footer ul{
+
+    font-size: 16px;
+    list-style-type: none;
+
+}
+.div-p-footer p{
+
+    padding-left: 10px;
+
+}  
+.div-p-footer li{
+
+    
+    padding-left: 15px;
+    padding-top: 5px;
+    display: inline-block;
+
+}
